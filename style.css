@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #8f4068;
+  font-family: "MUli", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: #ee58a3;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container .form-input {
+  width: 300px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-input input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.form-input label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-input input:focus,
+.form-input input:valid {
+  outline: 0;
+}
+
+.container .btn {
+  width: 100%;
+  background-color: #e6a7c6;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  color: #440e29;
+  font-size: 16px;
+}
+
+.form-input label span {
+  display: inline-block;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-input input:focus + label span,
+.form-input input:valid + label span {
+  transform: translateY(-30px);
+}
